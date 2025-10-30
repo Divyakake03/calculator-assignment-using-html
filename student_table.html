@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table Project</title>
+
+    <style>
+        /* -----------------------------------------
+           TABLE STYLING
+           - Adds yellow border with rounded corners
+        ------------------------------------------*/
+        .tab {
+            border: 2px solid yellow;
+            border-radius: 12px;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        /* -----------------------------------------
+           HEADER AND CELL STYLING
+           - Different background colors for sections
+        ------------------------------------------*/
+        .name, .c, .Q, .e, .V, .marks, .a100 {
+            background-color: blue;
+            color: white;
+        }
+
+        #a, #R, #T, #J {
+            background-color: black;
+            color: white;
+        }
+
+        .sub, .d, .S, .f, .details, .b {
+            background-color: red;
+            color: white;
+        }
+
+        th, td {
+            padding: 8px 15px;
+            text-align: center;
+            border: 1px solid #fff;
+        }
+
+        /* For explanation and layout */
+        body {
+            background-color: #f0f8ff;
+            font-family: "Times New Roman", serif;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: darkblue;
+        }
+
+        .info {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+            background: #fff8e7;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        img {
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==========================
+         PROJECT TITLE
+    =========================== -->
+    <h1>🎓 Student Table Project</h1>
+
+    <!-- ==========================
+         PROJECT EXPLANATION
+    =========================== -->
+    <div class="info">
+        <h2>📘 About This Project</h2>
+        <p>This project demonstrates how to create a colorful student table using <b>HTML</b> and <b>CSS</b>.</p>
+        <p>The table includes features like:</p>
+        <ul>
+            <li><b>colspan</b> – To merge columns for the table header.</li>
+            <li><b>rowspan</b> – To merge rows for the “Marks” column.</li>
+            <li>Custom background colors for different cells using <b>CSS classes</b> and <b>IDs</b>.</li>
+            <li>Rounded borders and alignment styling.</li>
+        </ul>
+    </div>
+
+    <!-- ==========================
+         STUDENT TABLE
+    =========================== -->
+    <!-- 
+      TABLE STRUCTURE:
+      - First row: Title (spans 4 columns)
+      - Second & third rows: Header details
+      - 6 data rows with one "Marks" column spanning all rows
+    -->
+    <table class="tab">
+        <tr>
+            <th colspan="4">Student</th>
+        </tr>
+
+        <tr>
+            <th class="details" colspan="3">Details</th>
+            <th class="marks" rowspan="2">Marks</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th class="name">Name</th>
+            <th class="sub">Subject</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td id="a">a</td>
+            <td id="J">J</td>
+            <td class="a100" rowspan="6">100</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td id="b">b</td>
+            <td class="Q">Q</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>c</td>
+            <td id="R">R</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td class="d">d</td>
+            <td class="S">S</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td class="e">e</td>
+            <td id="T">T</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td class="f">f</td>
+            <td class="V">V</td>
+        </tr>
+    </table>
+
+    <!-- ==========================
+         OUTPUT PREVIEW
+    =========================== -->
+    <div class="info">
+        <h2>🖼️ Output Preview</h2>
+        <p>Below is a sample screenshot of how the table looks in the browser:</p>
+        <!-- Replace 'screenshot.png' with your actual image name -->
+        <img src="screenshot.png" alt="Student Table Output" width="500">
+        <p><i>(If you upload this image to GitHub along with your HTML file, it will appear here automatically.)</i></p>
+    </div>
+
+    <!-- ==========================
+         HOW TO VIEW
+    =========================== -->
+    <div class="info">
+        <h2>🚀 How to View</h2>
+        <ol>
+            <li>Clone or download the repository from GitHub.</li>
+            <li>Open the <code>index.html</code> file in any browser.</li>
+            <li>Enjoy the colorful student table output!</li>
+        </ol>
+    </div>
+
+    <!-- ==========================
+         END OF DOCUMENT
+    =========================== -->
+</body>
+</html>
